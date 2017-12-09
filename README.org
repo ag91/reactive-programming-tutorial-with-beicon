@@ -1,0 +1,66 @@
+*  Reactive Programming Workshop for Clojure
+:PROPERTIES:
+:CREATED:  [2017-11-26 Sun 19:21]
+:END:
+
+** Setup
+:PROPERTIES:
+:CREATED:  [2017-11-26 Sun 19:22]
+:END:
+
+- Install [[https://leiningen.org/][lein]]. To check if it is installed, run:
+
+  #+BEGIN_SRC sh
+  lein version
+  #+END_SRC
+
+- Open the `clj` directory with your favorite IDE or editor (that hopefully is Emacs :).
+
+- Finally install the dependencies of the project with:
+
+  #+BEGIN_SRC sh
+  lein deps
+  #+END_SRC
+
+
+
+** Exercises
+:PROPERTIES:
+:CREATED:  [2017-11-26 Sun 19:27]
+:END:
+
+You can find the exercises in the =src/exercises= directory. There are
+two subdirectories =one= and =two= for both parts of the workshop.
+Within each of these directories you will find files labeled
+=exercise-xx.clj= which can be executed with =lein-exec=. Every
+exercise file contains the necessary information and assignment to
+solve the exercise. None of the exercises depend on other exercises,
+so if necessary you can skip exercises (not recommended).
+
+To run an exercise execute the following command in a console:
+
+#+BEGIN_SRC sh
+lein exec src/exercises/one/exercise-01.clj
+#+END_SRC
+
+
+
+** Reference resources
+:PROPERTIES:
+:CREATED:  [2017-11-26 Sun 19:30]
+:END:
+
+Visit the [[http://reactivex.io/documentation/operators.html][ReactiveX documentation page]] for detailed information about
+the operators.
+
+Also visit [[http://funcool.github.io/beicon/latest/][beicon's documentation]] for deeper insight about the library.
+
+
+
+** Solutions
+:PROPERTIES:
+:CREATED:  [2017-11-26 Sun 19:36]
+:END:
+
+You can find proposed solutions to the exercises in the =solutions=
+branch of this repository.
