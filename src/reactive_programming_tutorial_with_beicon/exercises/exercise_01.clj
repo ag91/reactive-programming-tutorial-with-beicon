@@ -2,7 +2,6 @@
   (:require [beicon.core :as rx]
             [reactive-programming-tutorial-with-beicon.util.example-streams :as es]))
 
-;;; The number$ stream below will emit short a sequence of numbers with an interval of 1 second.)
 (def number$ es/number$)
 (def numbers (atom []))
 
