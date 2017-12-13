@@ -3,7 +3,7 @@
              [reactive-programming-tutorial-with-beicon.exercises.exercise-02 :as e]))
 
 
-(midje/fact "The numbers atom should contain the stream numbers and its error message."
+(midje/fact "The strings atom should contain the stream numbers and its error message."
       (let [stream e/strings]
         @stream => ["next: 1"
                     "next: 9"
