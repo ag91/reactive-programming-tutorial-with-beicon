@@ -5,8 +5,6 @@
 
 (def number$ es/number$)
 
-;;; ASSIGNMENT: Use to number$ to define a new stream that only contains those numbers that are prime.
-;;;
-;;; HINT: You can make use of the utility function u/is-prime? to check if a given number is a prime number.
+;; ASSIGNMENT: Create a new stream based on the number$ stream that only emits even numbers.
 
-(def primeNumber$ (rx/from-coll [])) ;???
+(def evenNumber$ number$) ;???

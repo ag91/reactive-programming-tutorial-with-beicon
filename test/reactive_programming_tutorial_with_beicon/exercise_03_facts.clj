@@ -4,7 +4,7 @@
              [beicon.core :as rx]))
 
 
-(midje/fact "The primeNumber$ stream should contain only prime numbers."
+(midje/fact "The evenNumber$ stream should contain only even numbers."
       (let [stream (atom [])]
-        (rx/on-value e/primeNumber$ #(swap! stream conj %))
-        @stream => [1 7 2 2 7 3]))
+        (rx/on-value e/evenNumber$ #(swap! stream conj %))
+        @stream => [4 6 2 2 4 8]))
